@@ -30,7 +30,7 @@ request.onload = function () {
             book.setAttribute('class', 'book');
             book.textContent = ` Book Appearances : ${characters.books}`;
 
-            const add = document.createElement('p');
+            const add = document.createElement('button');
             add.setAttribute('class', 'btn btn-outline-dark');
             add.setAttribute('id', 'btn-save');
             add.setAttribute('type', 'button');
@@ -47,10 +47,8 @@ request.onload = function () {
             card.appendChild(book);
             card.appendChild(add);
 
-             card.appendChild(button);
 
             document.getElementById("btn-save").onclick = function() {
-              console.log(`${characters.name}`);
               localStorage.setItem('name', `${characters.name}`);
             };
 
@@ -66,18 +64,18 @@ request.onload = function () {
 }
 request.send();
 //
-// let title = [];
+// let name = [];
 // test = document.getElementById("search").value;
 // if(let = test) {
 //
-//     $.get(`https://ghibliapi.herokuapp.com/films/${index}`, function (data)
+//     $.get(`https://api.got.show/api/characters/`, function (data)
 //     {
 //
-//         $('#filmList').append(`<li id="${index}">${data.title}</li>`);
+//         $('#filmList').append(`<li id="${characters._id}">${data.name}</li>`);
 //
-//         $(`${index}`).on('click', function(e) {
-//             title.push(e.target.textContent);
-//             localStorage.setItem('characterss', title);
+//         $(`${characters._id}`).on('click', function(e) {
+//             name.push(e.target.textContent);
+//             localStorage.setItem('characterss', name);
 //         });
 //
 //     })
