@@ -1,0 +1,71 @@
+
+.action {
+    padding:50px 0;
+    text-align: center
+}
+p.text {
+    font-size:14px;
+    margin: 30px 0;
+    text-align: center
+}
+h1 {
+    width:100%;
+    text-align: center;
+    font-family: "Quicksand"
+}
+.logo {
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom:70px;
+}
+/*** CARDS ***/
+h2 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    /*background: #444;*/
+    font-size: 1.5rem;
+    /*color: white;*/
+    margin-bottom:20px;
+    font-family: "Quicksand"
+}
+p {
+    padding: 0 10px 0 10px ;
+    margin: 0;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap:wrap;
+}
+.card {
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    margin:10px;
+    overflow: hidden;
+    transition: all .2s linear;
+    padding: 0 0 20px 0;
+    width:30%;
+    justify-content: space-between;
+}
+form {
+    width: 300px;
+    margin: 30px auto 0;
+}
+p.description, span {
+    padding:0 20px;
+}
+ul.ui-autocomplete {
+    background:#fff;
+}
+.ui-autocomplete {
+    top: 10% !important;
+}
+#btn-save {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+}
